@@ -23,9 +23,7 @@ if(isset($_POST['submit']))
 
 // if no errors and everything success
 if(isset($success) && $success == true) {
-
 	// your successfully message 
-
 }
 else
 {
@@ -34,7 +32,7 @@ else
 	{
 	echo 'Please fill the blank data';
 	}
-
+	
 	// in HTML tags to show the specific value errors
 	if(count($errors) > 0 && !empty($errors['name'])) { 
 		echo $errors['name'];
